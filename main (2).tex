@@ -1,0 +1,158 @@
+\documentclass[9.5pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[a4paper,margin=1.45cm]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% ---------- General formatting ----------
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ---------- Hyperlinks ----------
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=blue,
+    pdfborder={0 0 0}
+}
+
+% ---------- Section headings ----------
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0pt}
+  {}
+  [\vspace{2pt}\titlerule\vspace{2pt}]
+
+\titlespacing*{\section}
+  {0pt}
+  {6pt}
+  {4pt}
+
+% ---------- Lists ----------
+\setlist[itemize]{
+  leftmargin=1.2em,
+  label=\textcolor{black!55}{\textbullet},
+  itemsep=1.2pt,
+  topsep=0.5pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+% ---------- Entry formatting ----------
+\newcommand{\entry}[2]{%
+  \vspace{2.5pt}%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{3.45cm}@{}}
+    \textbf{#1} & #2
+  \end{tabularx}
+}
+
+\newcommand{\bulletitem}[1]{
+  \item #1
+}
+
+% ---------- Document ----------
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+    {\fontsize{17}{20}\selectfont\textbf{VISHAAN VOHRA}}\\[3pt]
+    {\normalsize
+    \href{mailto:vohravishaan@gmail.com}{\underline{vohravishaan@gmail.com}}
+    \,|\, \href{tel:+447462489533}{\underline{+44 7462 489533}}
+    \,|\, \href{https://www.linkedin.com/in/vishaanvohra}{\underline{LinkedIn}}
+    \,|\, \href{https://github.com/vishaanvohra}{\underline{GitHub}}
+    }
+\end{center}
+
+% ---------- Education ----------
+\section*{EDUCATION}
+
+\entry{University of Bristol -- BSc Mathematics}{Sep 2025 -- Aug 2028}
+\begin{itemize}
+    \bulletitem{Year 1 Average: 68\% (2:1)}
+    \bulletitem{Relevant Modules: Linear Algebra; Analysis; Probability \& Statistics; Mathematical Programming;\\
+    Statistics 2; Applied PDEs}
+    \bulletitem{Skills Acquired: statistical analysis, mathematical modelling, proof-based reasoning, technical communication, \\ programming
+    }
+\end{itemize}
+
+\entry{Barton Peveril Sixth Form College}{Sep 2023 -- Aug 2025}
+\begin{itemize}
+    \bulletitem{A-Levels: Mathematics (A*), Further Mathematics (A), Computer Science (A)}
+    \bulletitem{Activities: Gold in UKMT Senior Maths Challenge (2x); Senior Kangaroo (2x); First Tech Challenge Robotics Team}
+\end{itemize}
+
+\entry{Cantell School}{Sep 2018 -- Aug 2023}
+\begin{itemize}
+    \bulletitem{10 GCSEs: six grade 9s and four grade 8s including Mathematics (9), Further Mathematics (9),\\
+    English Language (8), English Literature (8)}
+\end{itemize}
+
+% ---------- Projects ----------
+\section*{PROJECTS}
+
+\entry{Confidence Regions in fMRI -- University of Bristol}{Jun 2026 -- Present}
+\begin{itemize}
+    \bulletitem{Implemented simulation-based methods for evaluating statistical confidence regions in fMRI, measuring empirical coverage against target confidence levels across varying sample sizes}
+    \bulletitem{Evaluated empirical coverage and simulation runtime across varying sample sizes using NumPy and Matplotlib, investigating the trade-off between statistical accuracy and computational cost}
+\end{itemize}
+
+\entry{Upper Limb Activity in Prosthesis Users -- University of Southampton}{Sep 2024}
+\begin{itemize}
+    \bulletitem{Developed a Streamlit web application to stream and visualise live data from 6 sensors across both arms, enabling assessment of upper-limb activity and arm reliance in prosthesis users using Python and Matplotlib}
+\end{itemize}
+
+\entry{The Mathematics Behind Encryption -- Barton Peveril Sixth Form College}{May 2024 -- Jul 2024}
+\begin{itemize}
+    \bulletitem{Developed and presented a mathematical analysis of RSA encryption and Shor's algorithm to 30 students and teachers, including heads of department, using LaTeX for mathematical derivations}
+\end{itemize}
+
+% ---------- Work Experience ----------
+\section*{WORK EXPERIENCE}
+
+\entry{Social Media Team Lead -- LifeLab, University of Southampton}{Nov 2023 -- Sep 2026}
+\begin{itemize}
+    \bulletitem{Mentored a group of five 16--18-year-old students in content creation, social media analytics and public health communication, and created a 30-part short-form series of young-person-led interviews with scientists at the\\
+    Biomedical Research Centre}
+    \bulletitem{Led Instagram and TikTok content strategy, produced 60+ posts and short-form videos reaching approximately 3,000 viewers, and established LifeLab's TikTok presence and grew its Instagram following from less than\\
+    40 to approximately 450}
+\end{itemize}
+
+\entry{NHS Medical Receptionist -- Burgess Road GP Surgery}{Aug 2023 -- Aug 2025}
+\begin{itemize}
+    \bulletitem{Managed 100+ patient calls and approximately 90 appointments on high-volume days at a 10,000+ patient GP surgery, coordinating with patients and a multidisciplinary team of \textasciitilde20 doctors, nurses and administrative staff}
+    \bulletitem{Used SystmOne to maintain accurate patient records and process over 30 prescription requests in a shift, liaising with healthcare providers and pharmacies}
+\end{itemize}
+
+% ---------- Extracurricular Activities ----------
+\section*{EXTRACURRICULAR ACTIVITIES}
+
+\entry{Captain -- UoB Kickboxing Society (Bristol SU Gold-accredited)}{May 2026 -- Present}
+\begin{itemize}
+    \bulletitem{Coached up to 8 weekly beginner, intermediate and advanced sessions for a 200-member society}
+    \bulletitem{Organised inter-university competitions and events, including Fight Night with 20 fighters from 5 universities}
+\end{itemize}
+
+\entry{Vice President \& Band Director -- UoB Punjabi Society}{May 2026 -- Present}
+\begin{itemize}
+    \bulletitem{Co-organised weekly social events for a 100-member society, working with 10 Bristol-based sponsors}
+    \bulletitem{Directed the live band and coordinated performances for audiences of 50+ at university formals}
+\end{itemize}
+
+% ---------- Additional Information ----------
+\section*{ADDITIONAL INFORMATION}
+
+\textbf{Programming:} Python (NumPy, Matplotlib, Streamlit); R; MATLAB; C\#\\
+\textbf{Tools \& Methods:} Git/GitHub; LaTeX; statistical analysis; simulation; data visualisation\\
+\textbf{Languages:} English (Native); Punjabi (Fluent); Hindi (Fluent); French (Conversational)\\
+\textbf{Interests:} Running; Trinity Rock \& Pop Grade 8 Guitar; songwriting, live performance and music production
+
+\end{document}
